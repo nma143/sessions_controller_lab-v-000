@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
   def create
 
-    render :new
+    redirect_to action: "new"
   end
 
 
