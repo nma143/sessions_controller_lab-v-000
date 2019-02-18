@@ -5,6 +5,10 @@ class ApplicationController < ActionController::Base
 
   def hello
 
-  end 
+    if !session[:name]
+      
+    end
+
+  end
 
 end
