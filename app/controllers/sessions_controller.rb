@@ -10,6 +10,7 @@ class SessionsController < ApplicationController
       redirect_to action: "new"
     else
       session[:name] = params[:name]
+      redirect_to action: "hello"
     end
   end
 
