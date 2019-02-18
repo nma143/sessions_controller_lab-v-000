@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete
-    redirect_to controller: 'application', action: 'hello'
+    redirect_to action: 'hello', controller: 'application',
   end
 
 end
