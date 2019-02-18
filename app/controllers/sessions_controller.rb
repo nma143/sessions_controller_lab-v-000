@@ -6,7 +6,11 @@ class SessionsController < ApplicationController
 
   def create
 
-    redirect_to action: "new"
+    if !params[:name]
+      redirect_to action: "new"
+    else
+      session[:name] = params[:name]
+    end
   end
 
 
